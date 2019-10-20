@@ -188,7 +188,12 @@ function speak(title,_text,show = false,callback = false,correctOrNot,choice,end
               
               document.getElementById('points').innerText = points
               console.log(`CHOICE:${choice}`)
-              currentObj = mapData.questions[choice]
+            currentObj = mapData.questions[choice]
+              if(currentObj == undefined){
+                currentObj = mapData.questions[choice - 1]
+              }
+              
+              console.log(currentObj)
               currentObj.text.unshift(" ")
              setTimeout(function(){
               speak(currentObj.title,currentObj.text,true)
