@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spark Player</title>
+    <link href="../css/player.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@1/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
+</head>
+<body>
+        <ul class="nav ">
+                <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-fire mr-2"></i><strong>Spark</strong></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link">Playing <span id="mapName" >Loading</span></a>
+                </li>
+                <li class="nav-item">
+                
+                        <a class="nav-link">By <span id="mapAuthor" >Loading</span></a>
+                </li>   
+                <li class="nav-item">
+                
+                        <a class="nav-link"><i class="fas fa-heart"></i> <span id="points" >Loading</span></a>
+                </li>   
+
+             
+              </ul>
+    <div class="container">
+      <div>
+        <div class="titleBox">
+        <h3 id="title">Loading...</h3><br>
+        </div>
+       <div class="messageBox">
+        <h2 id="message">Loading...</h2><br>
+        <div id="choices"></div>
+      
+       </div>
+   
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="network.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/player.js"></script>
+    
+</body>
+</html>

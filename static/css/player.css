@@ -1,0 +1,59 @@
+@import url(main.css);
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Press Start 2P';
+}
+.container h1, .container h2, .container div{
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 37.5px;
+}
+.nav{
+    background-color: var(--back-accent);
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    transition: all 0.2s ease-in;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+
+    
+}
+.nav:hover{
+
+    background-color: rgba(0,0,0,1);
+    
+}
+.messageBox{
+    background-color: var(--back-accent); 
+    border-radius: 50px;
+    padding-top: 30px;
+   
+}
+.titleBox{
+    text-align: left;
+}
+button{
+    border-radius: 50px !important; 
+    margin: 20px !important;
+    min-width: 100px;
+}
+

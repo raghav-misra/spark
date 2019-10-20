@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spark</title>
+    <link href="../css/editor.css" rel="stylesheet"/>
+    <link href="../css/water.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@1/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div><i class="fas fa-fire mr-2"></i> <strong>Spark</strong></div>
+        <br><br>
+        <h1>New Game:</h1>
+        <button onclick="parse()">Publish!</button>
+    </header>
+    <div class="container">
+        <h1><input id="gameTitleBox" value="New Adventure" placeholder="What's the title?"></h1>
+        <div class="answer-field">
+            <span>By:</span>
+            <input id="authorBox" value="Taylor Teacherman" placeholder="Who are you?">
+        </div>
+        <hr>
+        <div class="answer-field">
+            <span>Initial Points:</span>
+            <input id="startPtBox" value="0" placeholder="How many?">
+        </div>
+        <div class="answer-field">
+            <span>Points to Win:</span>
+            <input id="winPtBox" value="15" placeholder="How many?">
+        </div>
+        <div class="end-messages">
+            <h3>End Messages:</h3>
+            <details class="win-data">
+                <summary class="q-parent">
+                    <span>If player wins...</span>
+                </summary>
+                <h2 class="q-parent">
+                    <input id="winTitleBox" class="question-title" type="text" value="Who is speaking?" placeholder="Who is speaking?">
+                <h2>
+                <h3>
+                    <textarea id="winSubBox" class="question-title" type="text" placeholder="What will it show if you win? (Seperated by newlines)"></textarea></h3>
+            </details>
+            <details class="lose-data">
+                <summary class="q-parent">
+                    <span>If player loses...</span>
+                </summary>
+                <h2 class="q-parent">
+                    <input id="loseTitleBox" class="question-title" type="text" value="Who is speaking? ¯\_(ツ)_/¯" placeholder="Who is speaking?">
+                <h2>
+                <h3>
+                    <textarea id="loseSubBox" class="question-title" type="text" placeholder="What will it show if you lose? (Seperated by newlines)"></textarea></h3>
+            </details>
+        </div>
+        <hr>
+        <div class="question-container" id="qContain">
+        </div>
+        <button onclick="createQuestion(document.querySelectorAll('.question').length + 1);">+ New Question</button>
+    </div>
+    <script src="../js/unact.js"></script>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="../js/editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto|Material+Icons&display=swap');
+
+:root{
+    --text: #FDF6E3;
+    --back-accent: #002B36;
+    --back: #073642;
+    --accent: #6C71C4;
+    --red: #f52727;
+}
+
+body, html{
+    background-color: var(--back) !important;
+}
+
+button{
+    border: 1px solid var(--text);
+    transition: 0.25s ease-in-out background;
+    font-size: 20px;
+    padding: 10px;
+    background: none;
+    margin: 10px;
+}
+
+button:hover{
+    background: var(--accent);
+}
+
+*{
+    color: var(--text);
+    background: none;
+}

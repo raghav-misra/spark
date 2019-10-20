@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto|Material+Icons&display=swap');
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+
+:root{
+    --text: #FDF6E3;
+    --back-accent: #002B36;
+    --back: #073642;
+    --accent: #6C71C4;
+    --red: #f52727;
+}
+
+header div:first-child{
+    font-size: 25px;
+    display: inline-block;
+}
+
+header div:first-child:hover i{
+    color: var(--red);
+
+}
+
+*{
+    font-family: 'Roboto';
+    outline: var(--text) !important;
+}
+
+.end-messages{
+    text-align: left;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background: var(--back) !important;
+}
+
+header{
+    text-align: left;
+    padding: 10px 30px;
+    margin: 10px;
+}
+header button{
+    float: right;
+    position: relative;
+    bottom: 5px;
+}
+header h1{
+    display: inline-block;
+    text-align: left;
+    font-family: "Press Start 2P";
+    font-weight: normal;
+}
+
+.container{
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    background: var(--back-accent);
+    margin-top: 50px;
+    border: 2px var(--text) solid;
+}
+
+h1 input, h2 input, h3 input, summary input{
+    width: 100%;
+}
+
+input, textarea{
+    background: var(--back-accent) !important;
+}
+
+
+
+button, a{
+    background: var(--accent) !important;
+    margin: 10px;
+    font-family: "Press Start 2P", monospace !important;
+}
+
+.question-container{
+    text-align: left;
+}
+
+h3{
+    font-weight: normal !important; 
+}
+
+.q-parent{
+    display: flex;
+    align-items: center;
+}
+
+.question-title{
+    flex: 1;
+}
+
+.q-parent span{
+    position: relative;
+    bottom: 2px;
+    right: 1px; 
+}
+
+.q-parent input{
+    position: relative;
+    top: 2px;
+}
+
+textarea{
+    border: 1px solid var(--text) !important;
+}
+
+summary{
+    border: 1px solid var(--text);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+details{
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.action{
+    margin: 5px 10px;
+    margin-top: 15px;
+}
+
+.action input[type="radio"]{
+    margin: 5px 10px;
+}
+
+.answer-field{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.answer-field input{
+    flex: 1;
+    margin-left: 5px;
+}
+
+.answer-field span{
+    position: relative;
+    bottom: 2.5px;
+}
+
+.answer-field-check{
+    display: block;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.answer-field-check input{
+    margin-left: 5px;
+}
+
+.answer-field-check span{
+    position: relative;
+    bottom: 2.5px;
+}
+.close-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 0;
+    background: var(--red) !important;
+}
+
+.close-btn i{
+    transform: scale(0.75);
+    position: relative;
+    top: 0px;
+    left: -0.5px
+}
